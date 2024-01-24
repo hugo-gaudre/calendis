@@ -1,0 +1,6 @@
+package com.example.calendis_events
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
