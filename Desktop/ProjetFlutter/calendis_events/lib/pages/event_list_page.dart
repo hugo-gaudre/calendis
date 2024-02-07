@@ -3,15 +3,17 @@ import 'package:flutter/material.dart';
 class EventListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: <Widget>[
-        EventTile(eventName: 'Anniversaire Juliette', date: '01 Fév', location: 'LA CIVETTE', city: 'Villeneuve d\'Ascq'),
-        EventTile(eventName: 'Concert Trio', date: '03 Fév', location: 'STADE PIERRE MAUROY', city: 'Villeneuve d\'Ascq'),
-        EventTile(eventName: 'Spectacle Mesmer', date: '10 Fév', location: 'THEATRE SEBASTOPOL', city: 'Lille'),
-        EventTile(eventName: 'Saint Valentin', date: '14 Fév', location: 'RESTAURANT LOVE', city: 'Lille'),
-        EventTile(eventName: 'Repas de famille', date: '17 Fév', location: 'MAISON PARENTS', city: 'Lille'),
-        EventTile(eventName: 'Examens', date: '21 Fév', location: 'EFFICOM', city: 'Lille'),
-      ],
+    return Scaffold(
+      body: ListView(
+        children: <Widget>[
+          EventTile(eventName: 'Anniversaire Juliette', date: '01 Fév', location: 'LA CIVETTE', city: 'Villeneuve d\'Ascq'),
+          EventTile(eventName: 'Concert Trio', date: '03 Fév', location: 'STADE PIERRE MAUROY', city: 'Villeneuve d\'Ascq'),
+          EventTile(eventName: 'Spectacle Mesmer', date: '10 Fév', location: 'THEATRE SEBASTOPOL', city: 'Lille'),
+          EventTile(eventName: 'Saint Valentin', date: '14 Fév', location: 'RESTAURANT LOVE', city: 'Lille'),
+          EventTile(eventName: 'Repas de famille', date: '17 Fév', location: 'MAISON PARENTS', city: 'Lille'),
+          EventTile(eventName: 'Examens', date: '21 Fév', location: 'EFFICOM', city: 'Lille'),
+        ],
+      ),
     );
   }
 }
