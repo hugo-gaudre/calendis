@@ -58,7 +58,7 @@ class LoginPage extends StatelessWidget {
               style: TextButton.styleFrom(
                 padding: EdgeInsets.symmetric(vertical: 16.0),
                 primary: Colors.black,
-                backgroundColor: Colors.grey[700],
+                backgroundColor: Color.fromARGB(181,166,181,1),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0),
                 ),

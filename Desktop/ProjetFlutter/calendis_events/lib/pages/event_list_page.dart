@@ -30,7 +30,7 @@ class EventTile extends StatelessWidget {
     required this.city,
   }) : super(key: key);
 
-@override
+  @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(8.0),
@@ -46,61 +46,15 @@ class EventTile extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text(
-                  eventName,
-                  style: TextStyle(
-                    color: Color(0xFFA6B501),
-                    fontSize: 28.0,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'RedHatDisplay',
-                  ),
-                ),
+                Text(eventName, style: TextStyle(color: Colors.white, fontSize: 18.0)),
                 SizedBox(height: 4.0),
-                Text(
-                  location,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.w300,
-                    fontFamily: 'RedHatDisplay',
-                  ),
-                ),
+                Text(location, style: TextStyle(color: Colors.white70)),
                 SizedBox(height: 2.0),
-                Text(
-                  city,
-                  style: TextStyle(
-                    color: Color(0xFF848484),
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.w300,
-                    fontFamily: 'RedHatDisplay',
-                  ),
-                ),
+                Text(city, style: TextStyle(color: Colors.white54)),
               ],
             ),
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: <Widget>[
-              Text(
-                date.substring(0, 2), // Numéro du jour
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 36.0,
-                  fontWeight: FontWeight.w200, // Extralight 36
-                  fontFamily: 'MuseoModerno',
-                ),
-              ),
-              Text(
-                date.substring(3), // Nom du mois
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.w200, // Extralight 24
-                  fontFamily: 'MuseoModerno',
-                ),
-              ),
-            ],
-          ),
+          Text(date, style: TextStyle(color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.bold)),
         ],
       ),
     );
